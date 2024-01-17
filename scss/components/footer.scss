@@ -1,0 +1,116 @@
+.footer {
+  width: 100%;
+  margin-top: 10rem;
+  background-color: $secondary_color_1;
+  &_petContainer {
+    padding: 8rem 0rem;
+  }
+  &_top {
+    background-color: $primary_color_1;
+    border-radius: 1rem;
+    padding: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    &_heading {
+      color: $white;
+      width: 40%;
+    }
+    &_form {
+      width: 60%;
+      background-color: $secondary_color_3;
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+      &_input {
+        padding: 1.1rem;
+        width: 80%;
+      }
+      &_petBtn {
+        background-color: $primary_color_1;
+        outline: none;
+        border: 1px solid $primary_color_1;
+        color: $white;
+        width: 18%;
+        padding: 1rem 0;
+        border-radius: 6px;
+        cursor: pointer;
+        &:hover {
+          color: $primary_color_1;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  &_middle {
+    border-bottom: 1px solid $secondary_color_2;
+  }
+  &_pnav_right {
+    width: 200px;
+    & > a {
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 2rem;
+    }
+    & i {
+      color: $primary_color_1;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  &_bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    &_list {
+      list-style: none;
+      display: flex;
+    }
+    &_link {
+      text-decoration: none;
+      margin-left: 2rem;
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .footer {
+    width: 100%;
+    margin-top: 10rem;
+    background-color: $secondary_color_1;
+    &_top {
+      flex-direction: column;
+      margin-bottom: 2.5rem;
+      &_heading {
+        width: 100%;
+        margin-bottom: 3rem;
+      }
+      &_form {
+        width: 100%;
+        background-color: $secondary_color_3;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        &_input {
+          padding: 1.1rem;
+          width: 100%;
+        }
+        &_petBtn {
+          width: 100%;
+        }
+      }
+    }
+    &_pnav_petContainer {
+      display: flex;
+      flex-direction: column;
+    }
+    &_pnav_right i {
+      margin: 0 1rem;
+    }
+    &_bottom {
+      flex-direction: column;
+    }
+  }
+}

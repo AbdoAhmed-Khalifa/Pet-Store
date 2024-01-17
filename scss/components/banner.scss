@@ -1,0 +1,70 @@
+.banner {
+  width: 100%;
+  background-image: url('/imgs/bannerIMG/Banner_bg.png');
+  background-repeat: no-repeat;
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7rem;
+    width: 100%;
+  }
+  &_title {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: $primary_color_1;
+  }
+  &_p {
+    margin-bottom: 4rem;
+  }
+  &_content {
+    text-align: right;
+    width: 100%;
+  }
+}
+.banner_2 {
+  width: 100%;
+  background-image: url('/imgs/productsLogo/Banner2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem;
+    width: 100%;
+  }
+  &_title {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: $primary_color_1;
+  }
+  &_p {
+    margin-bottom: 4rem;
+  }
+  &_content {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .banner {
+    width: 100%;
+    background-image: url('/imgs/bannerIMG/mobile_banner.png');
+    background-repeat: no-repeat;
+    height: 60rem;
+    &_wrapper {
+      display: flex;
+      padding: 4rem 2rem 0rem 2rem;
+      width: 100%;
+    }
+    &_content {
+      text-align: left;
+    }
+    &_img {
+      display: none;
+    }
+  }
+  .banner_2 {
+    display: none;
+  }
+}

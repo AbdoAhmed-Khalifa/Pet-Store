@@ -1,0 +1,27 @@
+.petBtn {
+  text-decoration: none;
+  padding: 1.3rem 2.2rem;
+  transition: all 0.4s;
+  &_outlined {
+    color: $primary_color_1;
+    font-weight: 600;
+    border: 2px solid $primary_color_1;
+    border-radius: 10rem;
+    &:hover {
+      color: $white;
+      background-color: $primary_color_1;
+    }
+  }
+  &_bg {
+    border: 2px solid $primary_color_1;
+    border-radius: 10rem;
+    background-color: $primary_color_1;
+    color: $white;
+    margin-left: 1rem;
+
+    &:hover {
+      color: $primary_color_1;
+      background-color: transparent;
+    }
+  }
+}
